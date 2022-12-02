@@ -29,7 +29,9 @@ int IndexOf(int[] collection, int find)
 {
     int count  =  collection.Length;
     int index = 0;
-    int position  = 0;
+    int position  = -1;
+    // Обратите внимание, что если такого элемента в массиве не существует, 
+    //то выводится -1
     while (index < count)
     {
           if (collection[index] == find)
@@ -46,5 +48,5 @@ FillArray(array);
 PrintArray(array);
 Console.WriteLine();
 
-int pos = IndexOf(array, 9);
+int pos = IndexOf(array, 45);
 Console.WriteLine(pos);
