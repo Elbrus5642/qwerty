@@ -43,12 +43,12 @@ for(int i =2; i < 10; i++)
     Console.WriteLine();
 }
 */
-/* string textOrigin = "- Я думаю , - сказал князь, улыбаясь, "
-+ " что есжели бы вас послали вместо нашего милого Винцегерольда" 
+string textOrigin = "- Я думаю , - сказал князь, улыбаясь, "
++ " что ежели бы вас послали вместо нашего милого Винцегерольда" 
 + " вы бы взяли приступом согласие прусского короля" 
 + " Вы так красноречивы, вы дадите мне чаю?";
 
-string Replace (string text, string oldValue, string newValue)
+string Replace (string text, char oldValue, char newValue)
 {
    string result = string.Empty;
    int stringLength  =  text.Length;
@@ -68,11 +68,11 @@ string Replace (string text, string oldValue, string newValue)
    return(result);   
 }
 
-string newText = Replace (textOrigin,"ю","&");
+string newText = Replace (textOrigin,'я','&');
 Console.WriteLine($"{newText}"); 
-*/
 
-int [] arr = {1,5,4,3,2,6,7,1,1};
+
+/* int [] arr = {1,5,4,3,2,6,7,1,1};
 
 void PrintArray(int [] array)
 {
@@ -107,3 +107,4 @@ void SelectionSort(int [] array)
 
 SelectionSort (arr);
 PrintArray(arr); 
+*/
