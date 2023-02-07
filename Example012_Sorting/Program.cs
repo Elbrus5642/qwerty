@@ -1,6 +1,6 @@
 ﻿/* Функции в программировании
 void SelectionSort(int[] array)
-{
+{  
  for (int i = 0; i < array.Length - 1; i++)
  {
  int minPosition = i;
@@ -44,32 +44,32 @@ for(int i =2; i < 10; i++)
 }
 */
 string textOrigin = "- Я думаю , - сказал князь, улыбаясь, "
-+ " что ежели бы вас послали вместо нашего милого Винцегерольда" 
-+ " вы бы взяли приступом согласие прусского короля" 
++ " что ежели бы вас послали вместо нашего милого Винцегерольда"
++ " вы бы взяли приступом согласие прусского короля"
 + " Вы так красноречивы, вы дадите мне чаю?";
 
-string Replace (string text, char oldValue, char newValue)
+string Replace(string text, char oldValue, char newValue)
 {
-   string result = string.Empty;
-   int stringLength  =  text.Length;
-   
-     for(int i = 0; i < stringLength; i++)
-     {
-        if (Equals(text[i], oldValue))  
-          {
-            result = result + $"{newValue}";
-          }  
-       else
-       {
-          result = result + $"{text[i]}";
-       }
-     } 
+    string result = string.Empty;
+    int stringLength = text.Length;
 
-   return(result);   
+    for (int i = 0; i < stringLength; i++)
+    {
+        if (Equals(text[i], oldValue))
+        {
+            result = result + $"{newValue}";
+        }
+        else
+        {
+            result = result + $"{text[i]}";
+        }
+    }
+
+    return (result);
 }
 
-string newText = Replace (textOrigin,'я','&');
-Console.WriteLine($"{newText}"); 
+string newText = Replace(textOrigin, 'я', '&');
+Console.WriteLine($"{newText}");
 
 
 /* int [] arr = {1,5,4,3,2,6,7,1,1};
